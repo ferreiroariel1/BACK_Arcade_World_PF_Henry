@@ -12,7 +12,7 @@ const Carts = require('./models/Carts.js')
 
 const { DB_USER, DB_PASSWORD, DB_HOST } = process.env
 
-const sequelize = new Sequelize(`postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/arcade`,{
+const sequelize = new Sequelize(`postgres://postgres:C4df6bE24bcCBaAd2baaDCf3-g6B*BC6@viaduct.proxy.rlwy.net:37217/railway`,{
     logging: false
 })
 

@@ -8,7 +8,8 @@ const getGeresHandler = require('../handlers/getGeresHandler.js')
 
 const router = Router()
 
-router.use('/videogame', VGrouter)
+router.use('/videogame', VGrouter,
+    (req, res) => {res.send("deploy funciona")})
 router.use('/user', UserRouter)
 router.use('/cart', CartRouter)
 
